@@ -4,9 +4,9 @@
         "post0": {
             "title": "Title",
             "content": "Bash Notebook . Using bas kernal to create a jupyter notebook and showing all the key tools installed . Toc:True- Badges: True | comments: False | Author: Chris Albertson | Categories: [fastpages, jupyter] | . echo &quot;Using conditional statement to create a project directory and project&quot; # Variable section export project_dir=$HOME/vscode # change vscode to different name to test git clone export project=$project_dir/APCSP # change APCSP to name of project from git clone export project_repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; # change to project of choice cd ~ # start in home directory # Conditional block to make a project directory if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; # Conditional block to git clone a project from project_repo if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; . Using conditional statement to create a project directory and project Directory /Users/chrisalbertson/vscode exists. Directory /Users/chrisalbertson/vscode/APCSP exists. .",
-            "url": "https://codeingchris.github.io/The-Grand-Universe/2022/08/27/Bashnotebookquiz.html",
-            "relUrl": "/2022/08/27/Bashnotebookquiz.html",
-            "date": " • Aug 27, 2022"
+            "url": "https://codeingchris.github.io/The-Grand-Universe/2022/08/28/Bashnotebookquiz.html",
+            "relUrl": "/2022/08/28/Bashnotebookquiz.html",
+            "date": " • Aug 28, 2022"
         }
         
     
