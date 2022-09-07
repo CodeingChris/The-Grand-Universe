@@ -102,9 +102,20 @@
   
 
   
+      ,"page1": {
+          "title": "Making a table",
+          "content": "Week Title What I Learned . 00 | Tool Setup | How to input things on my own and sometimes get an output | . 01 | Intro to Python | How to create my owm files and use Python | . 02 | Data Abstraction | Learned how to make a Quiz and fixed up my website | . 03 | Creatice Development | N/A | .",
+          "url": "https://codeingchris.github.io/The-Grand-Universe/_pages/2022-09-06-MarkdownPT.html",
+          "relUrl": "/_pages/2022-09-06-MarkdownPT.html",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page2": {
+
+  
+      ,"page3": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://codeingchris.github.io/The-Grand-Universe/about/",
@@ -136,7 +147,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://codeingchris.github.io/The-Grand-Universe/robots.txt",
