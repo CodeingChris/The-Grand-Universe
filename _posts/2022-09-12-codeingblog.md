@@ -1,7 +1,6 @@
 ---
 toc: true
 layout: post
-Badges: true
 comments: false
 author: Chris Albertson
 categories: [fastpages, markdown]
