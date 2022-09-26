@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>JavaScript | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="JavaScript" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://codeingchris.github.io/The-Grand-Universe/2022/09/25/JavaScriptProject.html" />
+<meta property="og:url" content="https://codeingchris.github.io/The-Grand-Universe/2022/09/25/JavaScriptProject.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-25T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="JavaScript" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-25T00:00:00-05:00","datePublished":"2022-09-25T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"JavaScript","mainEntityOfPage":{"@type":"WebPage","@id":"https://codeingchris.github.io/The-Grand-Universe/2022/09/25/JavaScriptProject.html"},"url":"https://codeingchris.github.io/The-Grand-Universe/2022/09/25/JavaScriptProject.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/The-Grand-Universe/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://codeingchris.github.io/The-Grand-Universe/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/The-Grand-Universe/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/The-Grand-Universe/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/The-Grand-Universe/about/">About Us</a><a class="page-link" href="/The-Grand-Universe/_pages/2022-09-06-MarkdownPT.html">Making a table</a><a class="page-link" href="/The-Grand-Universe/about/">About Me</a><a class="page-link" href="/The-Grand-Universe/search/">Search</a><a class="page-link" href="/The-Grand-Universe/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">JavaScript</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-25T00:00:00-05:00" itemprop="datePublished">
+        Sep 25, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      9 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/CodeingChris/The-Grand-Universe/tree/master/_notebooks/2022-09-25-JavaScriptProject.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/The-Grand-Universe/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/CodeingChris/The-Grand-Universe/master?filepath=_notebooks%2F2022-09-25-JavaScriptProject.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/The-Grand-Universe/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/CodeingChris/The-Grand-Universe/blob/master/_notebooks/2022-09-25-JavaScriptProject.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/The-Grand-Universe/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FCodeingChris%2FThe-Grand-Universe%2Fblob%2Fmaster%2F_notebooks%2F2022-09-25-JavaScriptProject.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/The-Grand-Universe/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-09-25-JavaScriptProject.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span>
+ <span class="s2">&quot;cells&quot;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+   <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+   <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;# JavaScript</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&gt; This notebook presents my understanding of JavaScript </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;- toc: true</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;- branch: master</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;- badges: true</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;- comments: true</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;- author: Chris Albertson</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;- categories: [week5]&quot;</span>
+   <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+   <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+   <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;{</span><span class="si">% i</span><span class="s2">nclude frontend.html %}&quot;</span>
+   <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+   <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;code&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;execution_count&quot;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+   <span class="s2">&quot;outputs&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+     <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stdout&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;output_type&quot;</span><span class="p">:</span> <span class="s2">&quot;stream&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&quot;object ,  Person { name: &#39;Chris&#39;, age: 16, residence: &#39;SanDiego&#39;, role: &#39;&#39; }</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;string ,  {</span><span class="se">\&quot;</span><span class="s2">name</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">Chris</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">age</span><span class="se">\&quot;</span><span class="s2">:16,</span><span class="se">\&quot;</span><span class="s2">residence</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">SanDiego</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">role</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;\&quot;</span><span class="s2">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;object ,  Person { name: &#39;Chris&#39;, age: 16, residence: &#39;SanDiego&#39;, role: &#39;Student&#39; }</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;string ,  {</span><span class="se">\&quot;</span><span class="s2">name</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">Chris</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">age</span><span class="se">\&quot;</span><span class="s2">:16,</span><span class="se">\&quot;</span><span class="s2">residence</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">SanDiego</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">role</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">Student</span><span class="se">\&quot;</span><span class="s2">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+     <span class="p">]</span>
+    <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;function PrintType(output) { // function to output data type and data into terminal</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    console.log(typeof output, </span><span class="se">\&quot;</span><span class="s2">, </span><span class="se">\&quot;</span><span class="s2">, output);</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;// define a function to hold data for a Person</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;function Person(name, age, residence) {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.name = name;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.age = age;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.residence = residence;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.role = </span><span class="se">\&quot;\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;// define a setter for role in Person data</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Person.prototype.setRole = function(role) {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.role = role;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;// define a JSON conversion </span><span class="se">\&quot;</span><span class="s2">method</span><span class="se">\&quot;</span><span class="s2"> associated with Person</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Person.prototype.toJSON = function() {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    const obj = {name: this.name, age: this.age, residence: this.residence, role: this.role};</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    const json = JSON.stringify(obj);</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    return json;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;// make a new Person and assign to variable student</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;var student = new Person(</span><span class="se">\&quot;</span><span class="s2">Ryan</span><span class="se">\&quot;</span><span class="s2">, 16, </span><span class="se">\&quot;</span><span class="s2">SanDiego</span><span class="se">\&quot;</span><span class="s2">);  // object type is easy to work with in JavaScript</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PrintType(student);  // before role</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PrintType(student.toJSON());</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;// output of Object and JSON/string associated with student</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;student.setRole(</span><span class="se">\&quot;</span><span class="s2">Student</span><span class="se">\&quot;</span><span class="s2">);   // set the role</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PrintType(student); </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PrintType(student.toJSON());  &quot;</span>
+   <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+   <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+   <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="p">[]</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+   <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;code&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;execution_count&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+   <span class="s2">&quot;outputs&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+     <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stdout&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;output_type&quot;</span><span class="p">:</span> <span class="s2">&quot;stream&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&quot;object ,  [ Person {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;    name: &#39;Mr. Mort&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;    age: &#39;52&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;    residence: &#39;San Diego&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;    role: &#39;Teacher&#39; },</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;  Person { name: &#39;Khalid&#39;, age: 16, residence: &#39;San Diego&#39;, role: &#39;Student&#39; },</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;  Person { name: &#39;Ryan&#39;, age: 16, residence: &#39;San Diego&#39;, role: &#39;Student&#39; },</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;  Person { name: &#39;Josh&#39;, age: 16, residence: &#39;San Diego&#39;, role: &#39;Student&#39; },</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;  Person {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;    name: &#39;Jeffery&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;    age: 17,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;    residence: &#39;San Diego&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;    role: &#39;Student&#39; } ]</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;string ,  Mr. Mort</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;string ,  {</span><span class="se">\&quot;</span><span class="s2">name</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">Mr. Mort</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">age</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">52</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">residence</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">San Diego</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">role</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">Teacher</span><span class="se">\&quot;</span><span class="s2">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;object ,  { name: &#39;Mr. Mort&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;  age: &#39;52&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;  residence: &#39;San Diego&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;  role: &#39;Teacher&#39; }</span><span class="se">\n</span><span class="s2">&quot;</span>
+     <span class="p">]</span>
+    <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;// define a student Array of Person(s)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;var students = [ </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    new Person(</span><span class="se">\&quot;</span><span class="s2">Khalid</span><span class="se">\&quot;</span><span class="s2">, 16, </span><span class="se">\&quot;</span><span class="s2">San Diego</span><span class="se">\&quot;</span><span class="s2">),</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    new Person(</span><span class="se">\&quot;</span><span class="s2">Ryan</span><span class="se">\&quot;</span><span class="s2">, 16, </span><span class="se">\&quot;</span><span class="s2">San Diego</span><span class="se">\&quot;</span><span class="s2">),</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    new Person(</span><span class="se">\&quot;</span><span class="s2">Josh</span><span class="se">\&quot;</span><span class="s2">, 16, </span><span class="se">\&quot;</span><span class="s2">San Diego</span><span class="se">\&quot;</span><span class="s2">),</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    new Person(</span><span class="se">\&quot;</span><span class="s2">Jeffery</span><span class="se">\&quot;</span><span class="s2">, 17, </span><span class="se">\&quot;</span><span class="s2">San Diego</span><span class="se">\&quot;</span><span class="s2">)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;];</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;var teacher = new Person(</span><span class="se">\&quot;</span><span class="s2">Mr. Mort</span><span class="se">\&quot;</span><span class="s2">, </span><span class="se">\&quot;</span><span class="s2">52</span><span class="se">\&quot;</span><span class="s2">, </span><span class="se">\&quot;</span><span class="s2">San Diego</span><span class="se">\&quot;</span><span class="s2">)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;// define a classroom and build Classroom objects and json</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;function Classroom(teacher, students){ // 1 teacher, many student</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    // start Classroom with Teacher</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    teacher.setRole(</span><span class="se">\&quot;</span><span class="s2">Teacher</span><span class="se">\&quot;</span><span class="s2">);</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.teacher = teacher;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.classroom = [teacher];</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    // add each Student to Classroom</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.students = students;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.students.forEach(student =&gt; { student.setRole(</span><span class="se">\&quot;</span><span class="s2">Student</span><span class="se">\&quot;</span><span class="s2">); this.classroom.push(student); });</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    // build json/string format of Classroom</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.json = [];</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    this.classroom.forEach(person =&gt; this.json.push(person.toJSON()));</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;// make a CompSci classroom from formerly defined teacher and students</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;compsci = new Classroom(teacher, students);</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;// output of Objects and JSON in CompSci classroom</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PrintType(compsci.classroom);  // constructed classroom object</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PrintType(compsci.classroom[0].name);  // abstract 1st objects name</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PrintType(compsci.json[0]);  // show json conversion of 1st object to string</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PrintType(JSON.parse(compsci.json[0]));  // show JSON.parse inverse of JSON.stringify&quot;</span>
+   <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+   <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;code&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;execution_count&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+   <span class="s2">&quot;outputs&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+     <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;text/html&quot;</span><span class="p">:</span> <span class="p">[</span>
+       <span class="s2">&quot;&lt;div style=&#39;display:inline-block;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;&#39;&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;mark&gt;Name&lt;/mark&gt;&lt;/th&gt;&lt;th&gt;&lt;mark&gt;Age&lt;/mark&gt;&lt;/th&gt;&lt;th&gt;&lt;mark&gt;Residence&lt;/mark&gt;&lt;/th&gt;&lt;th&gt;&lt;mark&gt;Role&lt;/mark&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Mr. M&lt;/td&gt;&lt;td&gt;?&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Teacher&lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;Ryan&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Student&lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;Josh&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Student&lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;Eli&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Student&lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;Jeffery&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Student&lt;/td&gt;&lt;tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;</span>
+      <span class="p">]</span>
+     <span class="p">},</span>
+     <span class="s2">&quot;execution_count&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+     <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+     <span class="s2">&quot;output_type&quot;</span><span class="p">:</span> <span class="s2">&quot;execute_result&quot;</span>
+    <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;// define an HTML conversion </span><span class="se">\&quot;</span><span class="s2">method</span><span class="se">\&quot;</span><span class="s2"> associated with Classroom</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Classroom.prototype._toHtml = function() {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    // HTML Style is build using inline structure</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    var style = (</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      </span><span class="se">\&quot;</span><span class="s2">display:inline-block;</span><span class="se">\&quot;</span><span class="s2"> +</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      </span><span class="se">\&quot;</span><span class="s2">border: 2px solid grey;</span><span class="se">\&quot;</span><span class="s2"> +</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      </span><span class="se">\&quot;</span><span class="s2">box-shadow: 0.8em 0.4em 0.4em grey;</span><span class="se">\&quot;\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    );</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    // HTML Body of Table is build as a series of concatenations (+=)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    var body = </span><span class="se">\&quot;\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    // Heading for Array Columns</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    body += </span><span class="se">\&quot;</span><span class="s2">&lt;tr&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    body += </span><span class="se">\&quot;</span><span class="s2">&lt;th&gt;&lt;mark&gt;</span><span class="se">\&quot;</span><span class="s2"> + </span><span class="se">\&quot;</span><span class="s2">Name</span><span class="se">\&quot;</span><span class="s2"> + </span><span class="se">\&quot;</span><span class="s2">&lt;/mark&gt;&lt;/th&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    body += </span><span class="se">\&quot;</span><span class="s2">&lt;th&gt;&lt;mark&gt;</span><span class="se">\&quot;</span><span class="s2"> + </span><span class="se">\&quot;</span><span class="s2">Age</span><span class="se">\&quot;</span><span class="s2"> + </span><span class="se">\&quot;</span><span class="s2">&lt;/mark&gt;&lt;/th&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    body += </span><span class="se">\&quot;</span><span class="s2">&lt;th&gt;&lt;mark&gt;</span><span class="se">\&quot;</span><span class="s2"> + </span><span class="se">\&quot;</span><span class="s2">Residence</span><span class="se">\&quot;</span><span class="s2"> + </span><span class="se">\&quot;</span><span class="s2">&lt;/mark&gt;&lt;/th&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    body += </span><span class="se">\&quot;</span><span class="s2">&lt;th&gt;&lt;mark&gt;</span><span class="se">\&quot;</span><span class="s2"> + </span><span class="se">\&quot;</span><span class="s2">Role</span><span class="se">\&quot;</span><span class="s2"> + </span><span class="se">\&quot;</span><span class="s2">&lt;/mark&gt;&lt;/th&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    body += </span><span class="se">\&quot;</span><span class="s2">&lt;/tr&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    // Data of Array, iterate through each row of compsci.classroom </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    for (var row of compsci.classroom) {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      // tr for each row, a new line</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      body += </span><span class="se">\&quot;</span><span class="s2">&lt;tr&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      // td for each column of data</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      body += </span><span class="se">\&quot;</span><span class="s2">&lt;td&gt;</span><span class="se">\&quot;</span><span class="s2"> + row.name + </span><span class="se">\&quot;</span><span class="s2">&lt;/td&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      body += </span><span class="se">\&quot;</span><span class="s2">&lt;td&gt;</span><span class="se">\&quot;</span><span class="s2"> + row.age + </span><span class="se">\&quot;</span><span class="s2">&lt;/td&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      body += </span><span class="se">\&quot;</span><span class="s2">&lt;td&gt;</span><span class="se">\&quot;</span><span class="s2"> + row.residence + </span><span class="se">\&quot;</span><span class="s2">&lt;/td&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      body += </span><span class="se">\&quot;</span><span class="s2">&lt;td&gt;</span><span class="se">\&quot;</span><span class="s2"> + row.role + </span><span class="se">\&quot;</span><span class="s2">&lt;/td&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      // tr to end line</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      body += </span><span class="se">\&quot;</span><span class="s2">&lt;tr&gt;</span><span class="se">\&quot;</span><span class="s2">;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    }</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;     // Build and HTML fragment of div, table, table body</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    return (</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      </span><span class="se">\&quot;</span><span class="s2">&lt;div style=&#39;</span><span class="se">\&quot;</span><span class="s2"> + style + </span><span class="se">\&quot;</span><span class="s2">&#39;&gt;</span><span class="se">\&quot;</span><span class="s2"> +</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        </span><span class="se">\&quot;</span><span class="s2">&lt;table&gt;</span><span class="se">\&quot;</span><span class="s2"> +</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;          body +</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        </span><span class="se">\&quot;</span><span class="s2">&lt;/table&gt;</span><span class="se">\&quot;</span><span class="s2"> +</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;      </span><span class="se">\&quot;</span><span class="s2">&lt;/div&gt;</span><span class="se">\&quot;\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    );</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  };</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  // IJavaScript HTML processor receive parameter of defined HTML fragment</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  $$.html(compsci._toHtml());&quot;</span>
+   <span class="p">]</span>
+  <span class="p">}</span>
+ <span class="p">],</span>
+ <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;kernelspec&quot;</span><span class="p">:</span> <span class="p">{</span>
+   <span class="s2">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;JavaScript (Node.js)&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="s2">&quot;javascript&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;javascript&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;language_info&quot;</span><span class="p">:</span> <span class="p">{</span>
+   <span class="s2">&quot;file_extension&quot;</span><span class="p">:</span> <span class="s2">&quot;.js&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;mimetype&quot;</span><span class="p">:</span> <span class="s2">&quot;application/javascript&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;javascript&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;6.11.2&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;orig_nbformat&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+  <span class="s2">&quot;vscode&quot;</span><span class="p">:</span> <span class="p">{</span>
+   <span class="s2">&quot;interpreter&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;916dbcbb3f70747c44a77c7bcd40155683ae19c65e1c03b4aa3499c5328201f1&quot;</span>
+   <span class="p">}</span>
+  <span class="p">}</span>
+ <span class="p">},</span>
+ <span class="s2">&quot;nbformat&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+ <span class="s2">&quot;nbformat_minor&quot;</span><span class="p">:</span> <span class="mi">2</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;cells&#39;: [{&#39;cell_type&#39;: &#39;markdown&#39;,
+   &#39;metadata&#39;: {},
+   &#39;source&#39;: [&#39;# JavaScript\n&#39;,
+    &#39;&gt; This notebook presents my understanding of JavaScript \n&#39;,
+    &#39;\n&#39;,
+    &#39;- toc: true\n&#39;,
+    &#39;- branch: master\n&#39;,
+    &#39;- badges: true\n&#39;,
+    &#39;- comments: true\n&#39;,
+    &#39;- author: Chris Albertson\n&#39;,
+    &#39;- categories: [week5]&#39;]},
+  {&#39;cell_type&#39;: &#39;markdown&#39;,
+   &#39;metadata&#39;: {},
+   &#39;source&#39;: [&#39;{% include frontend.html %}&#39;]},
+  {&#39;cell_type&#39;: &#39;code&#39;,
+   &#39;execution_count&#39;: 13,
+   &#39;metadata&#39;: {},
+   &#39;outputs&#39;: [{&#39;name&#39;: &#39;stdout&#39;,
+     &#39;output_type&#39;: &#39;stream&#39;,
+     &#39;text&#39;: [&#34;object ,  Person { name: &#39;Chris&#39;, age: 16, residence: &#39;SanDiego&#39;, role: &#39;&#39; }\n&#34;,
+      &#39;string ,  {&#34;name&#34;:&#34;Chris&#34;,&#34;age&#34;:16,&#34;residence&#34;:&#34;SanDiego&#34;,&#34;role&#34;:&#34;&#34;}\n&#39;,
+      &#34;object ,  Person { name: &#39;Chris&#39;, age: 16, residence: &#39;SanDiego&#39;, role: &#39;Student&#39; }\n&#34;,
+      &#39;string ,  {&#34;name&#34;:&#34;Chris&#34;,&#34;age&#34;:16,&#34;residence&#34;:&#34;SanDiego&#34;,&#34;role&#34;:&#34;Student&#34;}\n&#39;]}],
+   &#39;source&#39;: [&#39;function PrintType(output) { // function to output data type and data into terminal\n&#39;,
+    &#39;    console.log(typeof output, &#34;, &#34;, output);\n&#39;,
+    &#39;}\n&#39;,
+    &#39;// define a function to hold data for a Person\n&#39;,
+    &#39;function Person(name, age, residence) {\n&#39;,
+    &#39;    this.name = name;\n&#39;,
+    &#39;    this.age = age;\n&#39;,
+    &#39;    this.residence = residence;\n&#39;,
+    &#39;    this.role = &#34;&#34;;\n&#39;,
+    &#39;}\n&#39;,
+    &#39;\n&#39;,
+    &#39;// define a setter for role in Person data\n&#39;,
+    &#39;Person.prototype.setRole = function(role) {\n&#39;,
+    &#39;    this.role = role;\n&#39;,
+    &#39;}\n&#39;,
+    &#39;\n&#39;,
+    &#39;// define a JSON conversion &#34;method&#34; associated with Person\n&#39;,
+    &#39;Person.prototype.toJSON = function() {\n&#39;,
+    &#39;    const obj = {name: this.name, age: this.age, residence: this.residence, role: this.role};\n&#39;,
+    &#39;    const json = JSON.stringify(obj);\n&#39;,
+    &#39;    return json;\n&#39;,
+    &#39;}\n&#39;,
+    &#39;\n&#39;,
+    &#39;// make a new Person and assign to variable student\n&#39;,
+    &#39;var student = new Person(&#34;Ryan&#34;, 16, &#34;SanDiego&#34;);  // object type is easy to work with in JavaScript\n&#39;,
+    &#39;PrintType(student);  // before role\n&#39;,
+    &#39;PrintType(student.toJSON());\n&#39;,
+    &#39;\n&#39;,
+    &#39;// output of Object and JSON/string associated with student\n&#39;,
+    &#39;student.setRole(&#34;Student&#34;);   // set the role\n&#39;,
+    &#39;PrintType(student); \n&#39;,
+    &#39;PrintType(student.toJSON());  &#39;]},
+  {&#39;cell_type&#39;: &#39;markdown&#39;, &#39;metadata&#39;: {}, &#39;source&#39;: []},
+  {&#39;cell_type&#39;: &#39;code&#39;,
+   &#39;execution_count&#39;: 15,
+   &#39;metadata&#39;: {},
+   &#39;outputs&#39;: [{&#39;name&#39;: &#39;stdout&#39;,
+     &#39;output_type&#39;: &#39;stream&#39;,
+     &#39;text&#39;: [&#39;object ,  [ Person {\n&#39;,
+      &#34;    name: &#39;Mr. Mort&#39;,\n&#34;,
+      &#34;    age: &#39;52&#39;,\n&#34;,
+      &#34;    residence: &#39;San Diego&#39;,\n&#34;,
+      &#34;    role: &#39;Teacher&#39; },\n&#34;,
+      &#34;  Person { name: &#39;Khalid&#39;, age: 16, residence: &#39;San Diego&#39;, role: &#39;Student&#39; },\n&#34;,
+      &#34;  Person { name: &#39;Ryan&#39;, age: 16, residence: &#39;San Diego&#39;, role: &#39;Student&#39; },\n&#34;,
+      &#34;  Person { name: &#39;Josh&#39;, age: 16, residence: &#39;San Diego&#39;, role: &#39;Student&#39; },\n&#34;,
+      &#39;  Person {\n&#39;,
+      &#34;    name: &#39;Jeffery&#39;,\n&#34;,
+      &#39;    age: 17,\n&#39;,
+      &#34;    residence: &#39;San Diego&#39;,\n&#34;,
+      &#34;    role: &#39;Student&#39; } ]\n&#34;,
+      &#39;string ,  Mr. Mort\n&#39;,
+      &#39;string ,  {&#34;name&#34;:&#34;Mr. Mort&#34;,&#34;age&#34;:&#34;52&#34;,&#34;residence&#34;:&#34;San Diego&#34;,&#34;role&#34;:&#34;Teacher&#34;}\n&#39;,
+      &#34;object ,  { name: &#39;Mr. Mort&#39;,\n&#34;,
+      &#34;  age: &#39;52&#39;,\n&#34;,
+      &#34;  residence: &#39;San Diego&#39;,\n&#34;,
+      &#34;  role: &#39;Teacher&#39; }\n&#34;]}],
+   &#39;source&#39;: [&#39;// define a student Array of Person(s)\n&#39;,
+    &#39;var students = [ \n&#39;,
+    &#39;    new Person(&#34;Khalid&#34;, 16, &#34;San Diego&#34;),\n&#39;,
+    &#39;    new Person(&#34;Ryan&#34;, 16, &#34;San Diego&#34;),\n&#39;,
+    &#39;    new Person(&#34;Josh&#34;, 16, &#34;San Diego&#34;),\n&#39;,
+    &#39;    new Person(&#34;Jeffery&#34;, 17, &#34;San Diego&#34;)\n&#39;,
+    &#39;];\n&#39;,
+    &#39;var teacher = new Person(&#34;Mr. Mort&#34;, &#34;52&#34;, &#34;San Diego&#34;)\n&#39;,
+    &#39;\n&#39;,
+    &#39;// define a classroom and build Classroom objects and json\n&#39;,
+    &#39;function Classroom(teacher, students){ // 1 teacher, many student\n&#39;,
+    &#39;    // start Classroom with Teacher\n&#39;,
+    &#39;    teacher.setRole(&#34;Teacher&#34;);\n&#39;,
+    &#39;    this.teacher = teacher;\n&#39;,
+    &#39;    this.classroom = [teacher];\n&#39;,
+    &#39;    // add each Student to Classroom\n&#39;,
+    &#39;    this.students = students;\n&#39;,
+    &#39;    this.students.forEach(student =&gt; { student.setRole(&#34;Student&#34;); this.classroom.push(student); });\n&#39;,
+    &#39;    // build json/string format of Classroom\n&#39;,
+    &#39;    this.json = [];\n&#39;,
+    &#39;    this.classroom.forEach(person =&gt; this.json.push(person.toJSON()));\n&#39;,
+    &#39;}\n&#39;,
+    &#39;\n&#39;,
+    &#39;// make a CompSci classroom from formerly defined teacher and students\n&#39;,
+    &#39;compsci = new Classroom(teacher, students);\n&#39;,
+    &#39;\n&#39;,
+    &#39;// output of Objects and JSON in CompSci classroom\n&#39;,
+    &#39;PrintType(compsci.classroom);  // constructed classroom object\n&#39;,
+    &#39;PrintType(compsci.classroom[0].name);  // abstract 1st objects name\n&#39;,
+    &#39;PrintType(compsci.json[0]);  // show json conversion of 1st object to string\n&#39;,
+    &#39;PrintType(JSON.parse(compsci.json[0]));  // show JSON.parse inverse of JSON.stringify&#39;]},
+  {&#39;cell_type&#39;: &#39;code&#39;,
+   &#39;execution_count&#39;: 16,
+   &#39;metadata&#39;: {},
+   &#39;outputs&#39;: [{&#39;data&#39;: {&#39;text/html&#39;: [&#34;&lt;div style=&#39;display:inline-block;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;&#39;&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;mark&gt;Name&lt;/mark&gt;&lt;/th&gt;&lt;th&gt;&lt;mark&gt;Age&lt;/mark&gt;&lt;/th&gt;&lt;th&gt;&lt;mark&gt;Residence&lt;/mark&gt;&lt;/th&gt;&lt;th&gt;&lt;mark&gt;Role&lt;/mark&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Mr. M&lt;/td&gt;&lt;td&gt;?&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Teacher&lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;Ryan&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Student&lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;Josh&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Student&lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;Eli&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Student&lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;Jeffery&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;td&gt;San Diego&lt;/td&gt;&lt;td&gt;Student&lt;/td&gt;&lt;tr&gt;&lt;/table&gt;&lt;/div&gt;&#34;]},
+     &#39;execution_count&#39;: 16,
+     &#39;metadata&#39;: {},
+     &#39;output_type&#39;: &#39;execute_result&#39;}],
+   &#39;source&#39;: [&#39;// define an HTML conversion &#34;method&#34; associated with Classroom\n&#39;,
+    &#39;Classroom.prototype._toHtml = function() {\n&#39;,
+    &#39;    // HTML Style is build using inline structure\n&#39;,
+    &#39;    var style = (\n&#39;,
+    &#39;      &#34;display:inline-block;&#34; +\n&#39;,
+    &#39;      &#34;border: 2px solid grey;&#34; +\n&#39;,
+    &#39;      &#34;box-shadow: 0.8em 0.4em 0.4em grey;&#34;\n&#39;,
+    &#39;    );\n&#39;,
+    &#39;  \n&#39;,
+    &#39;    // HTML Body of Table is build as a series of concatenations (+=)\n&#39;,
+    &#39;    var body = &#34;&#34;;\n&#39;,
+    &#39;    // Heading for Array Columns\n&#39;,
+    &#39;    body += &#34;&lt;tr&gt;&#34;;\n&#39;,
+    &#39;    body += &#34;&lt;th&gt;&lt;mark&gt;&#34; + &#34;Name&#34; + &#34;&lt;/mark&gt;&lt;/th&gt;&#34;;\n&#39;,
+    &#39;    body += &#34;&lt;th&gt;&lt;mark&gt;&#34; + &#34;Age&#34; + &#34;&lt;/mark&gt;&lt;/th&gt;&#34;;\n&#39;,
+    &#39;    body += &#34;&lt;th&gt;&lt;mark&gt;&#34; + &#34;Residence&#34; + &#34;&lt;/mark&gt;&lt;/th&gt;&#34;;\n&#39;,
+    &#39;    body += &#34;&lt;th&gt;&lt;mark&gt;&#34; + &#34;Role&#34; + &#34;&lt;/mark&gt;&lt;/th&gt;&#34;;\n&#39;,
+    &#39;    body += &#34;&lt;/tr&gt;&#34;;\n&#39;,
+    &#39;    // Data of Array, iterate through each row of compsci.classroom \n&#39;,
+    &#39;    for (var row of compsci.classroom) {\n&#39;,
+    &#39;      // tr for each row, a new line\n&#39;,
+    &#39;      body += &#34;&lt;tr&gt;&#34;;\n&#39;,
+    &#39;      // td for each column of data\n&#39;,
+    &#39;      body += &#34;&lt;td&gt;&#34; + row.name + &#34;&lt;/td&gt;&#34;;\n&#39;,
+    &#39;      body += &#34;&lt;td&gt;&#34; + row.age + &#34;&lt;/td&gt;&#34;;\n&#39;,
+    &#39;      body += &#34;&lt;td&gt;&#34; + row.residence + &#34;&lt;/td&gt;&#34;;\n&#39;,
+    &#39;      body += &#34;&lt;td&gt;&#34; + row.role + &#34;&lt;/td&gt;&#34;;\n&#39;,
+    &#39;      // tr to end line\n&#39;,
+    &#39;      body += &#34;&lt;tr&gt;&#34;;\n&#39;,
+    &#39;    }\n&#39;,
+    &#39;  \n&#39;,
+    &#39;     // Build and HTML fragment of div, table, table body\n&#39;,
+    &#39;    return (\n&#39;,
+    &#39;      &#34;&lt;div style=\&#39;&#34; + style + &#34;\&#39;&gt;&#34; +\n&#39;,
+    &#39;        &#34;&lt;table&gt;&#34; +\n&#39;,
+    &#39;          body +\n&#39;,
+    &#39;        &#34;&lt;/table&gt;&#34; +\n&#39;,
+    &#39;      &#34;&lt;/div&gt;&#34;\n&#39;,
+    &#39;    );\n&#39;,
+    &#39;  \n&#39;,
+    &#39;  };\n&#39;,
+    &#39;  \n&#39;,
+    &#39;  // IJavaScript HTML processor receive parameter of defined HTML fragment\n&#39;,
+    &#39;  $$.html(compsci._toHtml());&#39;]}],
+ &#39;metadata&#39;: {&#39;kernelspec&#39;: {&#39;display_name&#39;: &#39;JavaScript (Node.js)&#39;,
+   &#39;language&#39;: &#39;javascript&#39;,
+   &#39;name&#39;: &#39;javascript&#39;},
+  &#39;language_info&#39;: {&#39;file_extension&#39;: &#39;.js&#39;,
+   &#39;mimetype&#39;: &#39;application/javascript&#39;,
+   &#39;name&#39;: &#39;javascript&#39;,
+   &#39;version&#39;: &#39;6.11.2&#39;},
+  &#39;orig_nbformat&#39;: 4,
+  &#39;vscode&#39;: {&#39;interpreter&#39;: {&#39;hash&#39;: &#39;916dbcbb3f70747c44a77c7bcd40155683ae19c65e1c03b4aa3499c5328201f1&#39;}}},
+ &#39;nbformat&#39;: 4,
+ &#39;nbformat_minor&#39;: 2}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/The-Grand-Universe/2022/09/25/JavaScriptProject.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/The-Grand-Universe/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/The-Grand-Universe/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/The-Grand-Universe/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/The-Grand-Universe/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/The-Grand-Universe/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
