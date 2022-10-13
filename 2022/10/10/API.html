@@ -135,7 +135,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">polygon</span> <span class="kn">import</span> <span class="n">RESTClient</span>
 <span class="n">client</span> <span class="o">=</span> <span class="n">RESTClient</span><span class="p">(</span><span class="s2">&quot;Qd5HMsasyuKDPod52ccnhcmHJ0TdGAy_&quot;</span><span class="p">)</span> <span class="c1"># api_key is used</span>
 
-<span class="n">aggs</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_aggs</span><span class="p">(</span><span class="s2">&quot;AAPL&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">)</span>
+<span class="n">aggs</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_aggs</span><span class="p">(</span><span class="s2">&quot;TSLA&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">aggs</span><span class="p">)</span>
 </pre></div>
 
@@ -149,7 +149,46 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[Agg(open=174.57, high=178.49, low=174.44, close=178.44, volume=76545983.0, vwap=177.4855, timestamp=1649044800000, transactions=630374, otc=None)]
+<pre>[Agg(open=363.1267, high=383.3033, low=357.51, close=381.8167, volume=82177701.0, vwap=374.1053, timestamp=1649044800000, transactions=859373, otc=None)]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">stock</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;request stock above&quot;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_daily_open_close_agg</span><span class="p">(</span><span class="n">stock</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">symbol</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">open</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>DailyOpenCloseAgg(after_hours=380, close=381.8167, from_=&#39;2022-04-04&#39;, high=383.3033, low=357.51, open=363.1267, pre_market=364.3333, status=&#39;OK&#39;, symbol=&#39;TSLA&#39;, volume=82177701.0, otc=None)
+TSLA
+363.1267
 </pre>
 </div>
 </div>

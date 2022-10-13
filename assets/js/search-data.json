@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "API",
-            "content": "from polygon import RESTClient client = RESTClient(&quot;Qd5HMsasyuKDPod52ccnhcmHJ0TdGAy_&quot;) # api_key is used aggs = client.get_aggs(&quot;AAPL&quot;, 1, &quot;day&quot;, &quot;2022-04-04&quot;, &quot;2022-04-04&quot;) print(aggs) . [Agg(open=174.57, high=178.49, low=174.44, close=178.44, volume=76545983.0, vwap=177.4855, timestamp=1649044800000, transactions=630374, otc=None)] .",
+            "content": "from polygon import RESTClient client = RESTClient(&quot;Qd5HMsasyuKDPod52ccnhcmHJ0TdGAy_&quot;) # api_key is used aggs = client.get_aggs(&quot;TSLA&quot;, 1, &quot;day&quot;, &quot;2022-04-04&quot;, &quot;2022-04-04&quot;) print(aggs) . [Agg(open=363.1267, high=383.3033, low=357.51, close=381.8167, volume=82177701.0, vwap=374.1053, timestamp=1649044800000, transactions=859373, otc=None)] . stock = input(&quot;request stock above&quot;) data = client.get_daily_open_close_agg(stock, &quot;2022-04-04&quot;) print(data) print(data.symbol) print(data.open) . DailyOpenCloseAgg(after_hours=380, close=381.8167, from_=&#39;2022-04-04&#39;, high=383.3033, low=357.51, open=363.1267, pre_market=364.3333, status=&#39;OK&#39;, symbol=&#39;TSLA&#39;, volume=82177701.0, otc=None) TSLA 363.1267 .",
             "url": "https://codeingchris.github.io/The-Grand-Universe/2022/10/10/API.html",
             "relUrl": "/2022/10/10/API.html",
             "date": " • Oct 10, 2022"
